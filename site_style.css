@@ -1,0 +1,130 @@
+:root {
+  --mobile-breakpoint: 500px;
+}
+
+/* FONT STYLING */
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url(fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Cinzel Decorative Bold";
+  src: url(fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Cinzel Decorative Black";
+  src: url(fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+/* @font-face {
+  font-family: "Roboto Condensed";
+  src: url(fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+} */
+
+h1 {
+  font-family: "Cinzel Decorative Bold", serif;
+}
+h2 {
+  font-family: "Cinzel Decorative", serif;
+}
+body, p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* LAYOUT */
+body {
+  margin: 0;
+}
+
+.body-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar, .footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  min-height: 80vh;
+  /* height: 80vh; */
+}
+/* RESPONSIVE LAYOUT */
+
+
+
+/* DESIGN */
+body {
+  font-size: 16pt;
+}
+
+.navbar {
+  background-color: #69A4D3;
+  color: white;
+  text-align: center;
+}
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+}
+/* .content {
+} */
+.footer {
+  background-color: #D9D9D9;
+  text-align: center;
+}
+
+/* ARTICLE BARS */
+/* content:has(.leftbar) {
+  width:
+} */
+.leftbar {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  /* height: 15vw; */
+  margin: 15px auto;
+  border: 2px black solid;
+}
+.leftbar, .leftbar > div {
+  padding: 15px;
+}
+.barimg {
+  width: 20vw;
+  height: 14vw;
+  background-size: cover;
+}
+a:has(.leftbar) {
+  text-decoration: none;
+  color: inherit;
+}
+.bartext {
+  margin: auto 0;
+}
+
+article {
+  width: 50vw;
+  margin: auto;
+}
+article img.main {
+  width: 30vw;
+  margin: 5vh calc(calc(50vw - 30vw) / 2) 0;
+}
+article p.caption {
+  text-align: center;
+}
